@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--Orange: hsl(26, 100%, 55%);
+--Pale-orange: hsl(25, 100%, 94%);
+--Very-dark-blue: hsl(220, 13%, 13%);
+--Dark-grayish-blue: hsl(219, 9%, 45%);
+--Grayish-blue: hsl(220, 14%, 75%);
+--Light-grayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--padding-sm: 8px;
+--padding-md: 16px;
+--padding-lg: 24px;
+--rounded-sm: 4px;
+--rounded-md: 8px;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+}
+
+.layout {
+  background-color: var(--White);
+}
+
+/*Fonts */
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Layout */
+section .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  height: 10vh;
+  padding-top: var(--padding-md);
+  padding-bottom: var(--padding-md);
+  padding-left: var(--padding-lg);
+  padding-right: var(--padding-lg);
+}
+
+/*Components */
+.navbar .sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar .sec-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar .menu-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar .menu-icon .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--Dark-grayish-blue);
+}
+
+.logo {
+  width: 124px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/logo.svg);
+}
+
+.go-to-cart {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidebar {
+  display: flex;
+  background-color: rgb(187, 124, 60);
+}
+
+.sidebar .container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-sm);
+}
+
+.sidebar .content {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar .close {
+  color: red;
+}
+
+.carousel .container {
+  width: 100%;
+  height: 40vh;
+  border: 1px solid blue;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: transparent;
+  padding: var(--padding-md);
+}
+
+.card-sub-title {
+  color: var(--Dark-grayish-blue);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.card-title {
+  /* Este estilo se repite */
+  color: var(--Black);
+  opacity: 75%;
+  font-size: 28px;
+  font-weight: 700;
+  /* Este estilo se repite */
+}
+
+.card-description {
+  color: var(--Dark-grayish-blue);
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* El precio tachado deberia estar fijo en la tarjeta */
+}
+
+.product-price .current-price {
+  color: var(--Black);
+  opacity: 75%;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.product-price .discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  font-weight: 700;
+  color: var(--White);
+  background-color: var(--Black);
+  border-radius: var(--rounded-md);
+}
+
+.product-price .original-price {
+  font-weight: 700;
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.product-couter {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--Light-grayish-blue);
+  padding: var(--padding-md);
+  border-radius: var(--rounded-md);
+}
+
+.product-couter .btn {
+  color: var(--Orange);
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-couter .counter {
+  border: none;
+  text-align: center;
+  max-width: 32px;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--Orange);
+  font-weight: 700;
+  padding-top: var(--padding-md);
+  padding-bottom: var(--padding-md);
+  border: none;
+  border-radius: var(--rounded-md);
+  cursor: pointer;
+}
+
+.add-to-cart-btn .icon {  
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
